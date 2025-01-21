@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Login</button>
+    </form>
+    <style>
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: auto;
+    }
+    
+    input {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+    <script>
+        // Example using Express.js
+app.post('/login', (req, res) => {
+    const { username, password } = req.body;
+    // Validate credentials
+    // If valid, create session and redirect
+    // If invalid, send error message
+});
+    </script>
+</body>
+</html>
